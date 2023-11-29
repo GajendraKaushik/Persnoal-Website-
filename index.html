@@ -44,48 +44,41 @@
         </div>
       </section>
       <hr />
-      <section class="SecondSection">
-        <span class="text-grey"> what i have done so far</span>
-        <h1>Past Experience</h1>
-        <div class="work_box">
-          <div class="vertical-line">
-            <img class="image-top" src="" alt />
-            <div class="vertical-title">Software Engineer interen</div>
-            <div class="vertical-desc">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laboriosam aliquid enim esse hic harum cumque laborum adipisci
-              provident nostrum! Aperiam eaque rerum dicta similique libero
-              taque cupiditate placeat error expedita?
-            </div>
+      <!-- past Experience  -->
+
+      <section class="Experience">
+        <div>Past Experience</div>
+        <div class="row">
+          <div class="col-1-img">
+            <img src="images/Cisco.jpeg" alt="Cisco_img" />
           </div>
-          <div class="vertical-line">
-            <img class="image-top" src="" alt />
-            <div class="vertical-title">Software Engineer interen</div>
-            <div class="vertical-desc">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laboriosam aliquid enim esse hic harum cumque laborum adipisci
-              provident nostrum! Aperiam eaque rerum dicta similique libero
-              taque cupiditate placeat error expedita?
+          <div class="cal-2-des">
+            <h1 class="sub-title">About Me </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              voluptatem sapiente voluptates quisquam? Vel qui, quisquam quam
+              dolore veniam nisi laborum vero incidunt repellat tempore sit
+              consectetur a sint distinctio?
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div> 
+            <div class="tab-contents active-tab" id ="skills">
+              <ul>
+                <li><span>Python</span><br>Automation</li>
+                <li><span>Jenkins</span><br>Automation</li>
+                <li><span>Docker</span><br>Automation</li>
+                <li><span>Linx</span><br>Automation</li>
+              </ul>
             </div>
-          </div>
-          <div class="vertical-line">
-            <img class="image-top" src="" alt />
-            <div class="vertical-title">Software Engineer interen</div>
-            <div class="vertical-desc">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laboriosam aliquid enim esse hic harum cumque laborum adipisci
-              provident nostrum! Aperiam eaque rerum dicta similique libero
-              taque cupiditate placeat error expedita?
-            </div>
-          </div>
-          <div class="vertical-line">
-            <img class="image-top" src="" alt />
-            <div class="vertical-title">Software Engineer interen</div>
-            <div class="vertical-desc">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laboriosam aliquid enim esse hic harum cumque laborum adipisci
-              provident nostrum! Aperiam eaque rerum dicta similique libero
-              taque cupiditate placeat error expedita?
+            <div class="tab-contents" id ="education">
+              <ul>
+                <li><span>Python</span><br>Automation</li>
+                <li><span>Jenkins</span><br>Automation</li>
+                <li><span>Docker</span><br>Automation</li>
+                <li><span>Linx</span><br>Automation</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -113,10 +106,18 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
+      var tablinks = document.getElementsByClassName("tab-links")
+      var tabcontents = document.getElementsByClassName("tab-contents")
+
+
+
       var typed = new Typed("#element", {
         strings: ["Web Developer", "Devops"],
         typeSpeed: 50,
       });
+
+  // 38:12
     </script>
   </body>
 </html>
+
