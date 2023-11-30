@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- like from font assoum to add the icons  -->
+    <script src="https://kit.fontawesome.com/d986c0b036.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -53,33 +55,85 @@
             <img src="images/Cisco.jpeg" alt="Cisco_img" />
           </div>
           <div class="cal-2-des">
-            <h1 class="sub-title">About Me </h1>
+            <h1 class="sub-title">About Me</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
               voluptatem sapiente voluptates quisquam? Vel qui, quisquam quam
               dolore veniam nisi laborum vero incidunt repellat tempore sit
               consectetur a sint distinctio?
             </p>
+            <h1 class="sub-title">Skils</h1>
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skill
+              </p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div> 
-            <div class="tab-contents active-tab" id ="skills">
+            </div>
+            <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>Python</span><br>Automation</li>
-                <li><span>Jenkins</span><br>Automation</li>
-                <li><span>Docker</span><br>Automation</li>
-                <li><span>Linx</span><br>Automation</li>
+                <li><span>Python</span><br />Automation</li>
+                <li><span>Jenkins</span><br />Automation</li>
+                <li><span>Docker</span><br />Automation</li>
+                <li><span>Linx</span><br />Automation</li>
               </ul>
             </div>
-            <div class="tab-contents" id ="education">
+            <div class="tab-contents" id="education">
               <ul>
-                <li><span>Python</span><br>Automation</li>
-                <li><span>Jenkins</span><br>Automation</li>
-                <li><span>Docker</span><br>Automation</li>
-                <li><span>Linx</span><br>Automation</li>
+                <li><span>Python2</span><br />Automation</li>
+                <li><span>Jenkins2</span><br />Automation</li>
+                <li><span>Docker1</span><br />Automation</li>
+                <li><span>Linx2</span><br />Automation</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------- Project sections ------------->
+      <section class="Projects">
+        <div id="project">
+          <div class="container">
+            <h1 class="sub-title">Persnal projects</h1>
+            <div class="projects-list">
+              <div>
+                <i class="fa-solid fa-code" style="color: #141666;"></i>
+                <h2>web site 1</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quibusdam in adipisci porro! Assumenda architecto molestias,
+                  voluptates doloremque consequatur accusamus praesentium!
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-window-restore" style="color: #141666;"></i>
+                <h2>web site 2</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quibusdam in adipisci porro! Assumenda architecto molestias,
+                  voluptates doloremque consequatur accusamus praesentium!
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-eye" style="color: #141666;"></i>
+                <h2>web site 2</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quibusdam in adipisci porro! Assumenda architecto molestias,
+                  voluptates doloremque consequatur accusamus praesentium!
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Portfolio">
+        <div id="portfolio">
+          <div class="container">
+            <h1 class="sub-title">Prortfolio</h1>
           </div>
         </div>
       </section>
@@ -106,18 +160,26 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-      var tablinks = document.getElementsByClassName("tab-links")
-      var tabcontents = document.getElementsByClassName("tab-contents")
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
 
       var typed = new Typed("#element", {
         strings: ["Web Developer", "Devops"],
         typeSpeed: 50,
       });
 
-  // 38:12
+      // 38:12
     </script>
   </body>
 </html>
-

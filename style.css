@@ -27,11 +27,11 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color:white;
+  color: white;
   position: relative;
 }
-nav ul li a::after{
-  content: '';
+nav ul li a::after {
+  content: "";
   width: 0;
   height: 3px;
   background-color: rgb(87, 87, 241);
@@ -41,7 +41,7 @@ nav ul li a::after{
   transition: 0.5s;
 }
 nav ul li a:hover::after {
- width: 100%;
+  width: 100%;
   font-size: 1.02rem;
 }
 
@@ -70,14 +70,14 @@ main hr {
 .leftSection {
   font-size: 2.5rem;
 }
-.leftSection .btn{
-padding: 12px;
-background-color: rgb(30, 30, 105);
-color: white;
-border: 2px solid white;
-border-radius: 6px;
-font-size: 10px;
-cursor: pointer;
+.leftSection .btn {
+  padding: 12px;
+  background-color: rgb(30, 30, 105);
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-size: 10px;
+  cursor: pointer;
 }
 .rightSection img {
   width: 100%;
@@ -94,43 +94,40 @@ cursor: pointer;
 
 .Experience {
   max-width: 80vw;
-  margin: 80px auto ;
+  margin: 80px auto;
   height: 80vh;
 }
 .Experience h1 {
   font-size: 1.9rem;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
-.col-1-img{
+.col-1-img {
   flex-basis: 35%;
 }
-.col-1-img  img{
+.col-1-img img {
   width: 100%;
   border-radius: 15px;
 }
 
-.cal-2-des{
+.cal-2-des {
   flex-basis: 60%;
-
 }
-.sub-title{
+.sub-title {
   font-size: 60px;
   font-weight: 600;
   color: white;
-
 }
 
-.tab-titles{
+.tab-titles {
   display: flex;
   margin: 20px 0 40px;
 }
-.tab-links{
+.tab-links {
   margin-right: 50px;
   font-size: 18px;
   font-weight: 500;
@@ -138,8 +135,8 @@ cursor: pointer;
   position: relative;
 }
 
-.tab-links::after{
-  content: '';
+.tab-links::after {
+  content: "";
   width: 0;
   height: 3px;
   background-color: rgb(87, 87, 241);
@@ -149,33 +146,88 @@ cursor: pointer;
   transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
   width: 50%;
 }
-.tab-contents ul li{
+.tab-contents ul li {
   list-style: none;
   margin: 10px 0;
 }
-.tab-contents ul li span{
+.tab-contents ul li span {
   color: rgb(57, 57, 239);
   font-size: 14px;
 }
-.tab-contents{
+.tab-contents {
   display: none;
 }
-.tab-contents.active-tab{
-display: block;
+.tab-contents.active-tab {
+  display: block;
 }
 
+/* --------- Persnoal projects -------- */
 
+#project {
+  padding: 30px 0;
+}
+.Projects {
+  max-width: 80vw;
+  margin: 80px auto;
+  height: 80vh;
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
 
+.projects-list div{
+  background:rgb(2, 2, 89);
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.projects-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.projects-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.projects-list div a {
+  text-decoration: none;
+  color: rgb(23, 23, 66);
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.projects-list div:hover{
+  background: rgb(130, 130, 240);
+  transform: translateY(-10px);
+
+}
+/* -------------- portfolio ------------- */
+.Portfolio{
+  max-width: 80vw;
+  margin: 80px auto;
+  height: 80vh;
+
+}
 /* -------footer------ */
+
 footer{
-  background-color:rgb(0 12 53);
+  background-color: rgb(0 12 53);
   padding: 23px 0;
    
 }
-.footer{
+.footer {
   display: flex;
   padding: 23px 122px;
   justify-content: space-evenly;
@@ -185,11 +237,11 @@ footer{
   list-style: none;
 }
 
-.footer > div{
+.footer > div {
   width: 120px;
 }
 
-footer .footer-rights{
+footer .footer-rights {
   text-align: center;
   color: grey;
   padding: 12px 0px;
