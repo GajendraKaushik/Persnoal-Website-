@@ -12,7 +12,10 @@
     />
     <link rel="stylesheet" href="style.css" />
     <!-- like from font assoum to add the icons  -->
-    <script src="https://kit.fontawesome.com/d986c0b036.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d986c0b036.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -96,7 +99,7 @@
             <h1 class="sub-title">Persnal projects</h1>
             <div class="projects-list">
               <div>
-                <i class="fa-solid fa-code" style="color: #141666;"></i>
+                <i class="fa-solid fa-code" style="color: #141666"></i>
                 <h2>web site 1</h2>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -106,7 +109,10 @@
                 <a href="#">Learn more</a>
               </div>
               <div>
-                <i class="fa-solid fa-window-restore" style="color: #141666;"></i>
+                <i
+                  class="fa-solid fa-window-restore"
+                  style="color: #141666"
+                ></i>
                 <h2>web site 2</h2>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -116,7 +122,7 @@
                 <a href="#">Learn more</a>
               </div>
               <div>
-                <i class="fa-solid fa-eye" style="color: #141666;"></i>
+                <i class="fa-solid fa-eye" style="color: #141666"></i>
                 <h2>web site 2</h2>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -134,6 +140,81 @@
         <div id="portfolio">
           <div class="container">
             <h1 class="sub-title">Prortfolio</h1>
+            <div class="work-list">
+              <div class="work">
+                <img src="images/work-1.jpg" alt="" />
+                <div class="cover">
+                  <h3>Web app</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero ipsa temporibus ab!
+                  <a href="">link</a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/work-1.jpg" alt="" />
+                <div class="cover">
+                  <h3>Ecommerse Website</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero ipsa temporibus ab!
+                  <a href="">link</a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/work-1.jpg" alt="" />
+                <div class="cover">
+                  <h3>Tourist spot</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero ipsa temporibus ab!
+                  <a href="">link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="see-more-btn"> see more</a>
+        </div>
+      </section>
+
+      <!-------- Contact form ---------->
+
+      <section class="contact-info">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-detail">
+              <h1 class="info">Contact me</h1>
+              <p>
+                <i class="fa-solid fa-envelope"></i>gajendrakaushik128@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i>9009142069</p>
+              <div class="social-media">
+                <a href="https"><i class="fa-brands fa-github"></i></a>
+                <a href="https"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+                <a href="https"><i class="fa-brands fa-hackerrank"></i></a>
+                <a href="https"><i class="fa-solid fa-code"></i></a>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form>
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Enter your name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <textarea name="Message" rows="6" placeholder="Your Message">
+                </textarea>
+                <button class="see-more-btn contact-btn" type="submit">
+                  Contact
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -178,8 +259,6 @@
         strings: ["Web Developer", "Devops"],
         typeSpeed: 50,
       });
-
-      // 38:12
     </script>
   </body>
 </html>
