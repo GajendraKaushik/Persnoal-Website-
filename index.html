@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Persnol Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="locostyle.css" />
     <link rel="stylesheet" href="style.css" />
     <!-- like from font assoum to add the icons  -->
     <script
@@ -18,75 +24,151 @@
     ></script>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav>
+        <a class ="left" href="#">Gajendra Kaushik</a>
+        <h4>MENU+</h4>
         <div class="left">Gajendra Kaushik</div>
-        <div class="right">
+         <div class="right">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-bars"></i>
           </ul>
+          
         </div>
       </nav>
-    </header>
+    </header> -->
 
-    <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          Hi,my name is <span class="purple">Gajendra</span>
-          <div>and i am a passionate</div>
-          <span id="element"></span>
-          <div class="buttons">
-            <button class="btn">Download Resume</button>
-            <button class="btn">Visit Github</button>
+    <main id="scroll">
+      <div id="home">
+        <div id="nav">
+          <a href="#">Gajendra Kaushik</a>
+          <h4>MENU+</h4>
+        </div>
+        <div class="heading">
+          <div class="bounding">
+            <h1 class="boundingelem">Full-Stack</h1>
+          </div>
+
+          <div class="blocktext">
+            <div class="bounding">
+              <h1 class="secondh1 boundingelem">Developer</h1>
+            </div>
+            <div class="bounding">
+              <h5 lcass="location" class="boundingelem">BASED IN INDIA</h5>
+            </div>
           </div>
         </div>
-        <div class="rightSection">
-          <img src="images/mern_bg-removebg-preview.png" alt="background_img" />
+        <div class="heading-2">
+          <div class="bounding">
+            <h5 class="boundingelem">Available to join as Web developer</h5>
+          </div>
+          <div class="bounding">
+            <h5 class="boundingelem">Immediate joiner</h5>
+          </div>
         </div>
-      </section>
+        <div class="homebottom">
+          <a href="https://www.linkedin.com/in/gajendrakaushik/" target="_blank">Visite Linkdin Profile<i class="ri-arrow-right-up-line"></i
+          ></a>
+          <a href="https://github.com/GajendraKaushik">Explore Git Hub<i class="ri-arrow-right-up-line"></i></a>
+          <div class="iconset">
+            <div class="circle"><i class="ri-arrow-down-fill"></i></div>
+            <div class="circle"><i class="ri-arrow-down-fill"></i></div>
+          </div>
+        </div>
+      </div>
+
       <hr />
       <!-- past Experience  -->
 
       <section class="Experience">
-        <div>Past Experience</div>
         <div class="row">
           <div class="col-1-img">
-            <img src="images/Cisco.jpeg" alt="Cisco_img" />
+            <img src="images/Cisco-2.jpeg" alt="Cisco_img" />
           </div>
           <div class="cal-2-des">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              voluptatem sapiente voluptates quisquam? Vel qui, quisquam quam
-              dolore veniam nisi laborum vero incidunt repellat tempore sit
-              consectetur a sint distinctio?
-            </p>
-            <h1 class="sub-title">Skils</h1>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skill
+            <!-- <h1 class="sub-title">About Me</h1> -->
+            <div class="detail-titles">
+              <p class="detail-links active-link1" onclick="selectTab('about')">
+                About
               </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="detail-links" onclick="selectTab('experience')">Past</p>
             </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Python</span><br />Automation</li>
-                <li><span>Jenkins</span><br />Automation</li>
-                <li><span>Docker</span><br />Automation</li>
-                <li><span>Linx</span><br />Automation</li>
-              </ul>
+            <div class="about-contents active-tab1" id="about">
+              <p>
+                about Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nihil voluptatem sapiente voluptates quisquam? Vel qui, quisquam
+                quam dolore veniam nisi laborum vero incidunt repellat tempore
+                sit consectetur a sint distinctio?
+              </p>
+              <div class="about-tab-titles">
+                <p
+                  class="tab-links-about active-link-about"
+                  onclick="opentab('skills')"
+                >
+                  Skill
+                </p>
+                <p class="tab-links-about" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+
+              <div class="tab-contents-about active-tab-about" id="skills">
+                <ul>
+                  <li><span>Python</span><br />Automation</li>
+                  <li><span>Jenkins</span><br />Automation</li>
+                  <li><span>Docker</span><br />Automation</li>
+                  <li><span>Linx</span><br />Automation</li>
+                </ul>
+              </div>
+              <div class="tab-contents-about" id="education">
+                <ul>
+                  <li><span>Python2</span><br />Automation</li>
+                  <li><span>Jenkins2</span><br />Automation</li>
+                  <li><span>Docker1</span><br />Automation</li>
+                  <li><span>Linx2</span><br />Automation</li>
+                </ul>
+              </div>
             </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>Python2</span><br />Automation</li>
-                <li><span>Jenkins2</span><br />Automation</li>
-                <li><span>Docker1</span><br />Automation</li>
-                <li><span>Linx2</span><br />Automation</li>
-              </ul>
+            <div class="about-contents" id="experience">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                voluptatem sapiente voluptates quisquam? Vel qui, quisquam quam
+                dolore veniam nisi laborum vero incidunt repellat tempore sit
+                consectetur a sint distinctio?
+              </p>
+              <div class="exp-tab-titles">
+                <p
+                  class="tab-links-exp active-link-exp"
+                  onclick="opentab_exp('skills-exp')"
+                >
+                  Skill-exp
+                </p>
+                <p class="tab-links-exp" onclick="opentab_exp('education-exp')">
+                  Education-exp
+                </p>
+              </div>
+
+              <div class="tab-contents-exp active-tab-exp" id="skills-exp">
+                <ul>
+                  <li><span>Python</span><br />Automation</li>
+                  <li><span>Jenkins</span><br />Automation</li>
+                  <li><span>Docker</span><br />Automation</li>
+                  <li><span>Linx</span><br />Automation</li>
+                </ul>
+              </div>
+              <div class="tab-contents-exp" id="education-exp">
+                <ul>
+                  <li><span>Python2-exp</span><br />Automation</li>
+                  <li><span>Jenkins2</span><br />Automation</li>
+                  <li><span>Docker1</span><br />Automation</li>
+                  <li><span>Linx2</span><br />Automation</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -96,7 +178,7 @@
       <section class="Projects">
         <div id="project">
           <div class="container">
-            <h1 class="sub-title">Persnal projects</h1>
+            <h1 class="sub-title">Persnal Projects</h1>
             <div class="projects-list">
               <div>
                 <i class="fa-solid fa-code" style="color: #141666"></i>
@@ -136,7 +218,7 @@
         </div>
       </section>
 
-      <section class="Portfolio">
+      <!-- <section class="Portfolio">
         <div id="portfolio">
           <div class="container">
             <h1 class="sub-title">Prortfolio</h1>
@@ -172,7 +254,7 @@
           </div>
           <a href="#" class="see-more-btn"> see more</a>
         </div>
-      </section>
+      </section> -->
 
       <!-------- Contact form ---------->
 
@@ -208,7 +290,12 @@
                   placeholder="Enter your email"
                   required
                 />
-                <textarea name="Message" rows="6" placeholder="Your Message">
+                <textarea
+                  class="text-area"
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                >
                 </textarea>
                 <button class="see-more-btn contact-btn" type="submit">
                   Contact
@@ -218,47 +305,57 @@
           </div>
         </div>
       </section>
+
+      <footer>
+        <div class="footer-left">
+          <div></div>
+          <div class="footer_second">
+            <a href="www.linkedin.com/in/gajendrakaushik">
+              <img
+                class="footer-img"
+                src="images/linkedin.png"
+                alt="linkedin"
+                srcset=""
+              />
+            </a>
+          </div>
+          <div class="footer_third">
+            <a href="https://github.com/GajendraKaushik">
+              <img
+                class="footer-img"
+                src="images/github.png"
+                alt="github"
+                srcset=""
+              />
+            </a>
+          </div>
+          <div class="footer_fourth">
+            <a href="https://leetcode.com/GAJENDRA_KAUSHIK/">
+              <img
+                class="footer-img"
+                src="images/leetcode.png"
+                alt="leetcode"
+                srcset=""
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer-rights">
+          Gajendra's persnal website | all rights reserverd
+        </div>
+      </footer>
     </main>
-    <footer>
-      <div class="footer">
-        <div class="footer_first">
-          <h3>Gajendra's Developer Portfolio</h3>
-        </div>
-        <div class="footer_second">
-          <ul>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-          </ul>
-        </div>
-        <div class="footer_third"></div>
-        <div class="footer_fourth"></div>
-      </div>
-      <div class="footer-rights">
-        Gajendra's persnal website | all rights reserverd
-      </div>
-    </footer>
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- for smoothe scrolling -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-
-      var typed = new Typed("#element", {
-        strings: ["Web Developer", "Devops"],
-        typeSpeed: 50,
-      });
-    </script>
   </body>
 </html>
