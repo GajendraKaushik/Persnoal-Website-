@@ -24,25 +24,7 @@
     ></script>
   </head>
   <body>
-    <!-- <header>
-      <nav>
-        <a class ="left" href="#">Gajendra Kaushik</a>
-        <h4>MENU+</h4>
-        <div class="left">Gajendra Kaushik</div>
-         <div class="right">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-            <i class="fa-solid fa-bars"></i>
-          </ul>
-          
-        </div>
-      </nav>
-    </header> -->
-
+    <div id="minicircle"></div>
     <main id="scroll">
       <div id="home">
         <div id="nav">
@@ -72,9 +54,12 @@
           </div>
         </div>
         <div class="homebottom">
-          <a href="https://www.linkedin.com/in/gajendrakaushik/" target="_blank">Visite Linkdin Profile<i class="ri-arrow-right-up-line"></i
+          <a href="https://www.linkedin.com/in/gajendrakaushik/" target="_blank"
+            >Visite Linkdin Profile<i class="ri-arrow-right-up-line"></i
           ></a>
-          <a href="https://github.com/GajendraKaushik">Explore Git Hub<i class="ri-arrow-right-up-line"></i></a>
+          <a href="https://github.com/GajendraKaushik"
+            >Explore Git Hub<i class="ri-arrow-right-up-line"></i
+          ></a>
           <div class="iconset">
             <div class="circle"><i class="ri-arrow-down-fill"></i></div>
             <div class="circle"><i class="ri-arrow-down-fill"></i></div>
@@ -91,82 +76,147 @@
             <img src="images/Cisco-2.jpeg" alt="Cisco_img" />
           </div>
           <div class="cal-2-des">
-            <!-- <h1 class="sub-title">About Me</h1> -->
             <div class="detail-titles">
-              <p class="detail-links active-link1" onclick="selectTab('about')">
-                About
+              <p 
+                class="detail-links active-link1 heading-text "
+                onclick="selectTab('about')"
+              >
+              <span class="active-btn">About Me</span> 
+                
               </p>
-              <p class="detail-links" onclick="selectTab('experience')">Past</p>
+              <p
+                class="detail-links heading-text"
+                onclick="selectTab('experience')"
+              >
+                Experience
+              </p>
             </div>
             <div class="about-contents active-tab1" id="about">
               <p>
-                about Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Nihil voluptatem sapiente voluptates quisquam? Vel qui, quisquam
-                quam dolore veniam nisi laborum vero incidunt repellat tempore
-                sit consectetur a sint distinctio?
+                I'm Gajendra Kaushik a software engineer🧑‍💻with a strong passion
+                for what I do and a commitment💪to always learning. I specialize
+                in Python, Java, web development and have a solid understanding
+                of data structures and algorithms. I pay close attention to
+                detail🤔 and aim for excellence in all my projects.
               </p>
+              <p id="lets-build">Let's build the future together! 🚀</p>
               <div class="about-tab-titles">
                 <p
-                  class="tab-links-about active-link-about"
+                  class="tab-links-about active-link-about heading-text"
                   onclick="opentab('skills')"
                 >
                   Skill
                 </p>
-                <p class="tab-links-about" onclick="opentab('education')">
+                <p
+                  class="tab-links-about heading-text"
+                  onclick="opentab('education')"
+                >
                   Education
                 </p>
               </div>
 
               <div class="tab-contents-about active-tab-about" id="skills">
-                <ul>
-                  <li><span>Python</span><br />Automation</li>
-                  <li><span>Jenkins</span><br />Automation</li>
-                  <li><span>Docker</span><br />Automation</li>
-                  <li><span>Linx</span><br />Automation</li>
-                </ul>
+                <div class="teck-stack">
+                  <ul>
+                    <h2>Languages</h2>
+                    <li>Python<br /><span>Intermidiate</span></li>
+                    <li>JavaScript<br /><span>Advanced</span></li>
+                    <li>HTMl,CSS<br /><span>Advanced</span></li>
+                    <li>Java<br /><span>Intermidiate</span></li>
+                  </ul>
+                  <ul>
+                    <h2>Dev-Ops</h2>
+                    <li>Docker<br /><span>Intermidiate</span></li>
+                    <li>Jenkins<br /><span>Advanced</span></li>
+                    <li>Linus<br /><span>Advanced</span></li>
+                    <li>Github, Bitbucket<br /><span>Intermidiate</span></li>
+                  </ul>
+                  <ul>
+                    <h2>Framworks and Courses</h2>
+                    <li>Reactjs<br /><span>Intermidiate</span></li>
+                    <li>Data Structures<br /><span>Advanced</span></li>
+                    <li>Algorithms<br /><span>Advanced</span></li>
+                    <li>Computer Networking<br /><span>Intermidiate</span></li>
+                  </ul>
+                </div>
               </div>
               <div class="tab-contents-about" id="education">
                 <ul>
-                  <li><span>Python2</span><br />Automation</li>
-                  <li><span>Jenkins2</span><br />Automation</li>
-                  <li><span>Docker1</span><br />Automation</li>
-                  <li><span>Linx2</span><br />Automation</li>
+                  <li>
+                    B.Teck - Information Technology<br /><span
+                      >CGPA-8.5 , 2018-2022</span
+                    >
+                  </li>
+                  <li>Claas - XII<br /><span>86% , 2017-2018</span></li>
+                  <li>Class - X<br /><span>82% , 2016-2017</span></li>
                 </ul>
               </div>
             </div>
             <div class="about-contents" id="experience">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                voluptatem sapiente voluptates quisquam? Vel qui, quisquam quam
-                dolore veniam nisi laborum vero incidunt repellat tempore sit
-                consectetur a sint distinctio?
+                During my one-year at Cisco Systems India, I played a vital role
+                in the Vartiace project, concentrating on performance
+                automation. I automated the performance system, cutting
+                processing time from 2 full working days to half a day, also used
+                Jenkins and Linux systems while working. I also contributed significantly by
+                configuring Prometheus and integrating it seamlessly with
+                Grafana, boosting our monitoring capabilities. This experience
+                in an agile environment sharpened my multitasking and time
+                management skills.
               </p>
-              <div class="exp-tab-titles">
-                <p
-                  class="tab-links-exp active-link-exp"
-                  onclick="opentab_exp('skills-exp')"
-                >
-                  Skill-exp
-                </p>
-                <p class="tab-links-exp" onclick="opentab_exp('education-exp')">
-                  Education-exp
-                </p>
-              </div>
 
               <div class="tab-contents-exp active-tab-exp" id="skills-exp">
-                <ul>
-                  <li><span>Python</span><br />Automation</li>
-                  <li><span>Jenkins</span><br />Automation</li>
-                  <li><span>Docker</span><br />Automation</li>
-                  <li><span>Linx</span><br />Automation</li>
-                </ul>
+                <div class="Proje-des">
+                  <ul>
+                    <h2>Tech-Stack</h2>
+                    <li>Python<br /><span>Advanced</span></li>
+                    <li>Jenkins,Docker<br /><span>Intermidiate</span></li>
+                    <li>Prometheus,Grafana<br /><span>Intermidiate</span></li>
+                    <li>Cloud<br /><span>Intermidiate</span></li>
+                    <li>
+                      Linx,Virtual Machines<br /><span>Intermidiate</span>
+                    </li>
+                  </ul>
+                  <ul class="Procj-contri">
+                    <h2>Project Contribution</h2>
+                    <li>
+                      Participated with Security Management Appliance (SMA) team
+                      to automate SAM configuration.
+                    </li>
+                    <li>
+                      Helping team to develop SMA Perf automation tool with
+                      focus on networking protocols
+                    </li>
+                    <li>
+                      Configured Grafana setup for data visualize in SMA and
+                      documented the steps.
+                    </li>
+                    <li>
+                      Working with routing devices such as ESA and SMA to ensure
+                      seamless network connectivity
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="tab-contents-exp" id="education-exp">
                 <ul>
-                  <li><span>Python2-exp</span><br />Automation</li>
-                  <li><span>Jenkins2</span><br />Automation</li>
-                  <li><span>Docker1</span><br />Automation</li>
-                  <li><span>Linx2</span><br />Automation</li>
+                  <h2>Project Contribution</h2>
+                  <li>
+                    > Participated with Security Management Appliance (SMA) team
+                    to automate SAM configuration.
+                  </li>
+                  <li>
+                    > Helping team to develop SMA Perf automation tool with
+                    focus on networking protocols
+                  </li>
+                  <li>
+                    > Configured Grafana setup for data visualize in SMA and
+                    documented the steps.
+                  </li>
+                  <li>
+                    > Working with routing devices such as ESA and SMA to ensure
+                    seamless network connectivity
+                  </li>
                 </ul>
               </div>
             </div>
@@ -182,79 +232,41 @@
             <div class="projects-list">
               <div>
                 <i class="fa-solid fa-code" style="color: #141666"></i>
-                <h2>web site 1</h2>
+                <h2>Expolreview</h2>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quibusdam in adipisci porro! Assumenda architecto molestias,
-                  voluptates doloremque consequatur accusamus praesentium!
+                  A full stack web application where user can create there
+                  account and share there review and can perform all the CRUDE
+                  operation to manage there accounts
                 </p>
-                <a href="#">Learn more</a>
+                <a href="https://github.com/GajendraKaushik/Project-react.git">Learn more</a>
               </div>
               <div>
                 <i
                   class="fa-solid fa-window-restore"
                   style="color: #141666"
                 ></i>
-                <h2>web site 2</h2>
+                <h2>Weather Now</h2>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quibusdam in adipisci porro! Assumenda architecto molestias,
-                  voluptates doloremque consequatur accusamus praesentium!
+                  A dynamic reactjs web application for realtime weather
+                  forcasting also gives the current weather details such as
+                  current temperature, wind Speed, humedity and etc.
                 </p>
-                <a href="#">Learn more</a>
+                <a href="https://github.com/GajendraKaushik/ReactJs_weather_app.git">Learn more</a>
               </div>
               <div>
                 <i class="fa-solid fa-eye" style="color: #141666"></i>
-                <h2>web site 2</h2>
+                <h2>GAMCHANGER</h2>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quibusdam in adipisci porro! Assumenda architecto molestias,
-                  voluptates doloremque consequatur accusamus praesentium!
+                  Clone of award wining Cynthia Ugwu website created it using
+                  Javascript, HTML, CSS and learn how can we create animation in
+                  the web application
                 </p>
-                <a href="#">Learn more</a>
+                <a href="https://github.com/GajendraKaushik/WEB_DEV_PORTFOLIO.git">Learn more</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- <section class="Portfolio">
-        <div id="portfolio">
-          <div class="container">
-            <h1 class="sub-title">Prortfolio</h1>
-            <div class="work-list">
-              <div class="work">
-                <img src="images/work-1.jpg" alt="" />
-                <div class="cover">
-                  <h3>Web app</h3>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Libero ipsa temporibus ab!
-                  <a href="">link</a>
-                </div>
-              </div>
-              <div class="work">
-                <img src="images/work-1.jpg" alt="" />
-                <div class="cover">
-                  <h3>Ecommerse Website</h3>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Libero ipsa temporibus ab!
-                  <a href="">link</a>
-                </div>
-              </div>
-              <div class="work">
-                <img src="images/work-1.jpg" alt="" />
-                <div class="cover">
-                  <h3>Tourist spot</h3>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Libero ipsa temporibus ab!
-                  <a href="">link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="see-more-btn"> see more</a>
-        </div>
-      </section> -->
 
       <!-------- Contact form ---------->
 

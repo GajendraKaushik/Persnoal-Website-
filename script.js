@@ -3,29 +3,6 @@ const scroll = new LocomotiveScroll({
   smooth: true,
 });
 
-// about and experience
-
-// <script>
-//     var tablinks = document.getElementsByClassName("tab-links");
-//     var tabcontents = document.getElementsByClassName("tab-contents");
-
-//     function opentab(tabname) {
-//       for (tablink of tablinks) {
-//         tablink.classList.remove("active-link");
-//       }
-//       for (tabcontent of tabcontents) {
-//         tabcontent.classList.remove("active-tab");
-//       }
-//       event.currentTarget.classList.add("active-link");
-//       document.getElementById(tabname).classList.add("active-tab");
-//     }
-
-//     var typed = new Typed("#element", {
-//       strings: ["Web Developer", "Devops Engineer "],
-//       typeSpeed: 50,
-//     });
-//   </script>
-
 //  For the About and Past Experience Section
 
 var about_tablinks = document.getElementsByClassName("detail-links");
@@ -74,7 +51,42 @@ function opentab_exp(tabname) {
 }
 
 
-var typed = new Typed("#element", {
-  strings: ["Web Developer", "Devops Engineer "],
-  typeSpeed: 50,
-});
+/* ------Minicircle-------- */
+
+function circleMouceFollower(xscal, yscal) {
+  window.addEventListener("mousemove", function (details) {
+    document.querySelector(
+      "#minicircle"
+    ).style.transform = `translate(${details.clientX}px, ${details.clientY}px) scale(${xscal}, ${yscal})`;
+  });
+}
+
+function HomeAnimation(){
+  var time = gsap.timeline()
+  time.from("#nav",{
+    y:"-10",
+    opacity: 0,
+    duration: 2,
+    ease: Expo.easeInOut,
+  })
+
+  .to(".boundingelem", {
+    y: "0",
+    duration: 2,
+    ease: Expo.easeInOut,
+    stagger : 0.1,
+    delay : -1,
+  })
+  .from(".homebottom", {
+    y: -10,
+    opacity: 0,
+    duration: 1.5,
+    delay: -1,
+    ease: Expo.easeInout,
+  });
+}
+
+
+circleMouceFollower(1,1);
+HomeAnimation();
+
