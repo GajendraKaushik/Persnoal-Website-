@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Persnol Website</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -68,225 +73,132 @@
       </div>
 
       <hr />
-      <!-- past Experience  -->
-      <section class="Experience">
+      <!---Past Experience-1 About-->
+      <div id="about">
         <div class="row">
-          <div class="col-1-img">
+          <div class="col-md-auto col-img">
             <img src="images/Cisco-2.jpeg" alt="Cisco_img" />
           </div>
-          <div class="cal-2-des">
-            <div class="detail-titles">
-              <p 
-                class="detail-links active-link1 heading-text "
-                onclick="selectTab('about')"
-              >
-              <span class="active-btn">About Me</span> 
-                
-              </p>
-              <p
-                class="detail-links heading-text"
-                onclick="selectTab('experience')"
-              >
-                Experience
-              </p>
-            </div>
-            <div class="about-contents active-tab1" id="about">
-              <p>
-                I'm Gajendra Kaushik a software engineer🧑‍💻with a strong passion
-                for what I do and a commitment💪to always learning. I specialize
-                in Python, Java, web development and have a solid understanding
-                of data structures and algorithms. I pay close attention to
-                detail🤔 and aim for excellence in all my projects.
-              </p>
-              <p id="lets-build">Let's build the future together! 🚀</p>
-              <div class="about-tab-titles">
-                <p
-                  class="tab-links-about active-link-about heading-text"
-                  onclick="opentab('skills')"
-                >
-                  Skill
-                </p>
-                <p
-                  class="tab-links-about heading-text"
-                  onclick="opentab('education')"
-                >
-                  Education
-                </p>
-              </div>
+          <div class="col col-des">
+            <h1 class="subtitle">About me</h1>
+            <p>
+              I'm Gajendra Kaushik a software engineer🧑‍💻with a strong passion
+              for what I do and a commitment💪to always learning. I specialize
+              in Python, Java, web development and have a solid understanding
+              of data structures and algorithms. I pay close attention to
+              detail🤔 and aim for excellence in all my projects.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links-about1 active-link-about1"
+              onclick="opentab('skills')">Skills</p>
 
-              <div class="tab-contents-about active-tab-about" id="skills">
-                <div class="teck-stack">
-                  <ul>
-                    <h2>Languages</h2>
-                    <li>Python<br /><span>Intermidiate</span></li>
-                    <li>JavaScript<br /><span>Advanced</span></li>
-                    <li>HTMl,CSS<br /><span>Advanced</span></li>
-                    <li>Java<br /><span>Intermidiate</span></li>
-                  </ul>
-                  <ul>
-                    <h2>Dev-Ops</h2>
-                    <li>Docker<br /><span>Intermidiate</span></li>
-                    <li>Jenkins<br /><span>Advanced</span></li>
-                    <li>Linus<br /><span>Advanced</span></li>
-                    <li>Github, Bitbucket<br /><span>Intermidiate</span></li>
-                  </ul>
-                  <ul>
-                    <h2>Framworks and Courses</h2>
-                    <li>Reactjs<br /><span>Intermidiate</span></li>
-                    <li>Data Structures<br /><span>Advanced</span></li>
-                    <li>Algorithms<br /><span>Advanced</span></li>
-                    <li>Computer Networking<br /><span>Intermidiate</span></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="tab-contents-about" id="education">
+              <p class="tab-links-about1"
+              onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents-about active-tab-about" id="skills">
+              <div class="teck-stack">
                 <ul>
-                  <li>
-                    B.Teck - Information Technology<br /><span
-                      >CGPA-8.5 , 2018-2022</span
-                    >
-                  </li>
-                  <li>Claas - XII<br /><span>86% , 2017-2018</span></li>
-                  <li>Class - X<br /><span>82% , 2016-2017</span></li>
+                  <h2 class="sub-heading">Languages</h2>
+                  <li>Python<br /><span>Intermidiate</span></li>
+                  <li>JavaScript<br /><span>Advanced</span></li>
+                  <li>HTMl,CSS<br /><span>Advanced</span></li>
+                  <li>Java<br /><span>Intermidiate</span></li>
+                </ul>
+                <ul>
+                  <h2 class="sub-heading" >Dev-Ops</h2>
+                  <li>Docker<br /><span>Intermidiate</span></li>
+                  <li>Jenkins<br /><span>Advanced</span></li>
+                  <li>Linus<br /><span>Advanced</span></li>
+                  <li>Github, Bitbucket<br /><span>Intermidiate</span></li>
+                </ul>
+                <ul>
+                  <h2 class="sub-heading" >Framworks and Courses</h2>
+                  <li>Reactjs<br /><span>Intermidiate</span></li>
+                  <li>Data Structures<br /><span>Advanced</span></li>
+                  <li>Algorithms<br /><span>Advanced</span></li>
+                  <li>Computer Networking<br /><span>Intermidiate</span></li>
                 </ul>
               </div>
             </div>
-            <div class="about-contents" id="experience">
-              <p>
-                During my one-year at Cisco Systems India, I played a vital role
-                in the Vartiace project, concentrating on performance
-                automation. I automated the performance system, cutting
-                processing time from 2 full working days to half a day, also used
-                Jenkins and Linux systems while working. I also contributed significantly by
-                configuring Prometheus and integrating it seamlessly with
-                Grafana, boosting our monitoring capabilities. This experience
-                in an agile environment sharpened my multitasking and time
-                management skills.
-              </p>
-
-              <div class="tab-contents-exp active-tab-exp" id="skills-exp">
-                <div class="Proje-des">
-                  <ul>
-                    <h2>Tech-Stack</h2>
-                    <li>Python<br /><span>Advanced</span></li>
-                    <li>Jenkins,Docker<br /><span>Intermidiate</span></li>
-                    <li>Prometheus,Grafana<br /><span>Intermidiate</span></li>
-                    <li>Cloud<br /><span>Intermidiate</span></li>
-                    <li>
-                      Linx,Virtual Machines<br /><span>Intermidiate</span>
-                    </li>
-                  </ul>
-                  <ul class="Procj-contri">
-                    <h2>Project Contribution</h2>
-                    <li>
-                      Participated with Security Management Appliance (SMA) team
-                      to automate SAM configuration.
-                    </li>
-                    <li>
-                      Helping team to develop SMA Perf automation tool with
-                      focus on networking protocols
-                    </li>
-                    <li>
-                      Configured Grafana setup for data visualize in SMA and
-                      documented the steps.
-                    </li>
-                    <li>
-                      Working with routing devices such as ESA and SMA to ensure
-                      seamless network connectivity
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="tab-contents-exp" id="education-exp">
-                <ul>
-                  <h2>Project Contribution</h2>
-                  <li>
-                    > Participated with Security Management Appliance (SMA) team
-                    to automate SAM configuration.
-                  </li>
-                  <li>
-                    > Helping team to develop SMA Perf automation tool with
-                    focus on networking protocols
-                  </li>
-                  <li>
-                    > Configured Grafana setup for data visualize in SMA and
-                    documented the steps.
-                  </li>
-                  <li>
-                    > Working with routing devices such as ESA and SMA to ensure
-                    seamless network connectivity
-                  </li>
-                </ul>
-              </div>
+            <div class="tab-contents-about" id="education">
+              <ul>
+                <li>
+                  B.Teck - Information Technology<br /><span
+                    >CGPA-8.5 , 2018-2022</span
+                  >
+                </li>
+                <li>Claas - XII<br /><span>86% , 2017-2018</span></li>
+                <li>Class - X<br /><span>82% , 2016-2017</span></li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!--------- Project sections ------------->
-      <section class="Projects">
-        <div id="project">
-          <div class="container">
-            <h1 class="sub-title">Persnal Projects</h1>
-            <div class="projects-list">
-              <div>
-                <i class="fa-solid fa-code" style="color: #141666"></i>
-                <h2>Expolreview</h2>
-                <p>
-                  A full stack web application where user can create there
-                  account and share there review and can perform all the CRUDE
-                  operation to manage there accounts
-                </p>
-                <a href="https://github.com/GajendraKaushik/Project-react.git">Learn more</a>
-              </div>
-              <div>
-                <i
-                  class="fa-solid fa-window-restore"
-                  style="color: #141666"
-                ></i>
-                <h2>Weather Now</h2>
-                <p>
-                  A dynamic reactjs web application for realtime weather
-                  forcasting also gives the current weather details such as
-                  current temperature, wind Speed, humedity and etc.
-                </p>
-                <a href="https://github.com/GajendraKaushik/ReactJs_weather_app.git">Learn more</a>
-              </div>
-              <div>
-                <i class="fa-solid fa-eye" style="color: #141666"></i>
-                <h2>GAMCHANGER</h2>
-                <p>
-                  Clone of award wining Cynthia Ugwu website created it using
-                  Javascript, HTML, CSS and learn how can we create animation in
-                  the web application
-                </p>
-                <a href="https://github.com/GajendraKaushik/WEB_DEV_PORTFOLIO.git">Learn more</a>
-              </div>
-            </div>
+
+      <!--  persnal project section  -->
+      <div id="projects">
+        <h1 class="sub-title">Persnal-Projects</h1>
+        <div class="project_list">
+          <div>
+            <i class="fa-solid fa-code" style="color: #141666"></i>
+            <h2>Expolreview</h2>
+            <p>
+              A full stack web application where user can create there
+              account and share there review and can perform all the CRUDE
+              operation to manage there accounts
+            </p>
+            <a href="https://github.com/GajendraKaushik/Project-react.git">Learn more</a>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-window-restore"
+              style="color: #141666"
+            ></i>
+            <h2>Weather Now</h2>
+            <p>
+              A dynamic reactjs web application for realtime weather
+              forcasting also gives the current weather details such as
+              current temperature, wind Speed, humedity and etc.
+            </p>
+            <a href="https://github.com/GajendraKaushik/ReactJs_weather_app.git">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-eye" style="color: #141666"></i>
+            <h2>GAMCHANGER</h2>
+            <p>
+              Clone of award wining Cynthia Ugwu website created it using
+              Javascript, HTML, CSS and learn how can we create animation in
+              the web application
+            </p>
+            <a href="https://github.com/GajendraKaushik/WEB_DEV_PORTFOLIO.git">Learn more</a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-------- Contact form ---------->
-
-      <section class="contact-info">
-        <div class="container">
-          <div class="contact-box">
+      <div id="contact">
+        <div class="row">
+          <div class="col-md-auto contact-des ">
             <div class="contact-detail">
               <h1 class="info">Contact me</h1>
               <p>
-                <i class="fa-solid fa-envelope"></i>gajendrakaushik128@gmail.com
+                <i class="fa-solid fa-envelope fa-2x"></i>gajendrakaushik128@gmail.com
               </p>
-              <p><i class="fa-solid fa-phone"></i>9009142069</p>
+              <p><i class="fa-solid fa-phone fa-2x"></i>9009142069</p>
               <div class="social-media">
-                <a href="https"><i class="fa-brands fa-github"></i></a>
+                <a href="https"><i class="fa-brands fa-github fa-2x"></i></a>
                 <a href="https"
-                  ><i class="fa-brands fa-square-instagram"></i
+                  ><i class="fa-brands fa-square-instagram fa-2x"></i
                 ></a>
-                <a href="https"><i class="fa-brands fa-hackerrank"></i></a>
-                <a href="https"><i class="fa-solid fa-code"></i></a>
-              </div>
+                <a href="https"><i class="fa-brands fa-hackerrank fa-2x"></i></a>
+                <a href="https"><i class="fa-solid fa-code fa-2x"></i></a>
+              </div> 
+              <button class="see-more-btn contact-btn" type="submit">
+                Download Resume
+              </button>
             </div>
+          </div>
+          <div class="col">
             <div class="contact-form">
               <form>
                 <input
@@ -315,8 +227,8 @@
             </div>
           </div>
         </div>
-      </section>
 
+      </div>
       <footer>
         <div class="footer-left">
           <div></div>
