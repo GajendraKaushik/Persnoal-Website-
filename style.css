@@ -103,6 +103,7 @@ body {
   text-transform: uppercase;
   margin-top: 0.5vw;
   font-size: 1vw;
+  font-weight: 800;
   text-align: right;
 }
 .homebottom {
@@ -316,7 +317,7 @@ form textarea {
   outline: none;
   background: rgba(255, 255, 255, 0.544);
   padding: 15px;
-  margin: 15px;
+  margin: 15px 0px;
   color: rgba(0, 0, 0, 0.911);
   font-size: 18px;
   border-radius: 6px;
