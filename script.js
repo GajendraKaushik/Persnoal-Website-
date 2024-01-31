@@ -55,7 +55,6 @@ function HomeAnimation(){
   });
 }
 
-
 circleMouceFollower(1,1);
 HomeAnimation();
 
